@@ -35,12 +35,12 @@ void heapSort()
     bool isMax = false;
     int n = arr.size() - 1;
     for (int i = n; i >= 0; i--)
-        downHeapify(i, n, arr, isMax);
+        downHeapify(i, n, arr, isMax); 
 
     for (int i = n; i >= 0; i--)
     {
         swap(arr[0], arr[n--]);
-        downHeapify(0, n, arr, isMax);
+        downHeapify(0, n, arr, isMax); // O(nlogn)
     }
 
     for (int d : arr)

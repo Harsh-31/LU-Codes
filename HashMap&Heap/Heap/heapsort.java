@@ -33,7 +33,8 @@ public class heapsort{
         int n = arr.length - 1;
         boolean isMax = false;
         
-        for(int i = n; i >= 0 ; i--) downHeapify(arr,n,isMax,i);
+        for(int i = n; i >= 0 ; i--) 
+        downHeapify(arr,n,isMax,i);
 
 
         for(int i = 0; i <= n; i++){
